@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/a"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginLeft="150dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="我的日记本 "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/tianjia"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="center"
+                android:layout_width="25dp"
+                android:src="@drawable/jia"
+                android:layout_height="25dp" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_view2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

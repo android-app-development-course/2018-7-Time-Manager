@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/d"
+    tools:context=".Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+5
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/music"
+                android:layout_marginLeft="5dp"
+                android:layout_width="30dp"
+                android:src="@drawable/music1"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/t1"
+                android:layout_marginLeft="140dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/shezhi"
+                android:layout_marginLeft="100dp"
+                android:src="@drawable/shezhi"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp">
+
+            <com.example.a86131.fromzero.CountDownProgressBar
+                android:id="@+id/cpb_countdown"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                app:countDown_centerTextColor="#000000"
+                app:countDown_centerTextSize="0sp"
+                app:countDown_circleWidth="4dp"
+                app:countDown_firstColor="#b3505c3c"
+                app:countDown_isShowGradient="true"
+                app:countDown_secondColor="#9e0202c7" />
+
+            <com.example.a86131.fromzero.TimeDownView
+                android:id="@+id/tdv"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"></com.example.a86131.fromzero.TimeDownView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="#aefa8686"
+            android:text="开始"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
